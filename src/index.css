@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "LNTH-Sacred Bridge";
+  src: url("./assets/LNTH-Sacred\ Bridge.ttf") format(truetype);
+}
+@font-face {
+  font-family: "iCielBCOldStyle-Regular";
+  src: url("./assets/iCielBCOldStyle-Regular") format(truetype);
+}
+
+:root {
+  --heading-font: "LNTH-Sacred Bridge";
+  --body-font: "iCielBCOldStyle-Regular";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: unset;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+button, a {
+  cursor: pointer;
+}
