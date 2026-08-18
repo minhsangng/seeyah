@@ -5,6 +5,7 @@ import SkyEffect from './components/SkyEffect'
 import { Search, PlayCircle } from 'lucide-react'
 import axios from 'axios'
 import './App.css'
+import BG from './assets/background.png'
 
 function Home({ data, query, setQuery }) {
   const [search, setSearch] = useState([])
@@ -43,7 +44,7 @@ function Home({ data, query, setQuery }) {
   }
   
   return (
-    <section className='relative w-screen min-h-screen bg-bottom bg-no-repeat bg-cover' style={{backgroundImage: 'url(./src/assets/background.png)'}}>
+    <section className='relative w-screen min-h-screen bg-bottom bg-no-repeat bg-cover' style={{backgroundImage: `url(${BG})`}}>
       <SkyEffect starCount={80} shootingStarChance={0.008} moonX={0.6} moonY={0.1} moonRadius={45} />
       
       <div className='grid grid-cols-2 grid-rows-1 gap-0 w-[90vw] mx-auto h-screen items-center'>
